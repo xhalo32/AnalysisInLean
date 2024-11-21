@@ -175,8 +175,8 @@ theorem tendsto_subseq_of_bddAbove_bddBelow {x : ℕ → ℝ} (hx : BddAbove (ra
   -- Because every sequence has a monotone or antitone subsequence, we can case split on it
   cases' subseq_monotone_or_antitone x with subseq subseq
   · -- Monotone case
-    -- Use monotone convergence theorem (`tendsto_of_monotone`) to show that `φ` either tends to some value or diverges
+    -- Use the monotone convergence theorem (`tendsto_of_monotone`) to show that `φ` either tends to some value or diverges. Use boundedness assumptions to contradict the latter case.
     sorry
   · -- Antitone case
-    -- Use antitone convergence theorem (`tendsto_of_antitone`) to show that `φ` either tends to some value or divergesobtain ⟨φ, φ_mono, φh⟩ := subseq
+    -- This case is very similar to the first one. Use the antitone version of the convergence theorem (`tendsto_of_antitone`).
     sorry

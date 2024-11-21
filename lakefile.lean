@@ -4,7 +4,8 @@ open Lake DSL
 package "DifferentialCalculus" where
   -- Settings applied to both builds and interactive editing
   leanOptions := #[
-    ⟨`pp.unicode.fun, true⟩ -- pretty-prints `fun a ↦ b`
+    ⟨`pp.unicode.fun, true⟩, -- pretty-prints `fun a ↦ b`
+    ⟨`linter.unusedTactic, false⟩
   ]
   -- add any additional package configuration options here
 
